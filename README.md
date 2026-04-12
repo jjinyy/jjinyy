@@ -58,13 +58,3 @@ LSTM vs Transformer comparison. Sequential behavior modeling.
 **ERP / Enterprise**
 `SAP ERP` `SAP Ariba` `SAP SRM` `SAP BW` `SAP SAC`
 
----
-
-### Experience
-**CJ Cheiljedang** — Procurement Strategy / Next ERP TF (Aug 2022 – present)
-Global SRM PI, procurement dashboard, AI material classification, vendor dedup, RAG system
-
-**Hansol PNS** — Digital Innovation (Dec 2018 – Aug 2022)
-20+ AI / automation projects across manufacturing, logistics, pharma
-
-jjjiny_y@naver.com
