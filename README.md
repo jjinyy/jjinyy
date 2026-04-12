@@ -1,17 +1,22 @@
 ## Hi, I'm Jinny
 
-Work in data analytics and applied AI.
+I build applied AI systems that work in real-world environments.
 
-Usually starts with "why does this number look wrong?" —
-then pulling apart the process, redefining the metric, building the system.
-Habit of talking to people before touching the data.
+My focus is not just on models, but on how AI integrates into actual business processes —
+from data pipelines and system design to deployment and iteration.
 
-Worked on-site in Malaysia, Singapore, Thailand, Brazil, and the US —
-learned firsthand why the same metric produces different numbers across countries,
-and spent most of that time standardizing data and building KPI frameworks from scratch.
+I often start with messy, ambiguous problems
+and turn them into structured AI solutions that can be reliably used in production.
 
-These days mostly thinking about behavioral analytics pipelines
-and how to build AI systems that actually hold up in production.
+Before building anything, I prioritize understanding how people work —
+because the success of an AI system depends more on adoption than accuracy.
+
+I’ve worked across Malaysia, Singapore, Thailand, Brazil, and the US,
+designing systems in environments where data is inconsistent and processes vary widely.
+These experiences shaped how I approach scalable and resilient AI.
+
+Currently focused on behavioral data pipelines,
+LLM/RAG-based systems, and building AI that holds up beyond the prototype stage.
 
 ---
 
