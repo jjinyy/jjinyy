@@ -22,44 +22,41 @@ LLM/RAG-based systems, and building AI that holds up beyond the prototype stage.
 
 ### Projects
 
-** [material-category-mapping-ai](https://github.com/jjinyy/material-category-mapping-ai)**
-Auto-classification pipeline for ~100K multilingual material records.
-80%+ accuracy within a standardized category schema.
+**[soybeanoil-predict](https://github.com/jjinyy/soybeanoil-predict)**
+Commodity purchase decision model — RL (DQN) + XGBoost/TFT, reframed as a sequential decision problem, not price forecasting.
+SAP CAP/Node.js service layer (HANA CDS, OData) serving the model through SAP AI Core — training → inference validated end to end.
+
+**[material-category-mapping-ai](https://github.com/jjinyy/material-category-mapping-ai)**
+Auto-classification pipeline for 100K+ multilingual material records.
+95%+ accuracy within a standardized category schema.
 Human-in-the-loop design — accuracy compounds as users give feedback.
 Triplet Loss + Hard Negative Mining based training architecture.
 
-** [vendor-deduplication-ai](https://github.com/jjinyy/vendor-deduplication-ai)**
+**[vendor-deduplication-ai](https://github.com/jjinyy/vendor-deduplication-ai)**
 Dedup pipeline across ~50K global supplier records.
-No universal ID in overseas data, so tax ID used only as secondary signal.
-3-stage hybrid: Blocking → ANN → Embedding similarity scoring.
-~30% duplicate rate found across the dataset — data cleansing completed.
+No universal ID across countries — tax ID used only as a secondary signal.
+3-stage hybrid: Blocking → ANN → embedding similarity scoring.
+~30% duplicate rate found and cleaned.
 
-** Internal Policy Review RAG System** (internal project)
-Automated compliance and subcontracting law review system.
-LangChain + LLM + internal docs / external legal data.
-Local LLM setup using Ollama / DeepSeek.
+**[procurement-rag-system](https://github.com/jjinyy/procurement-rag-system)**
+Internal compliance/policy Q&A system. Hybrid retrieval + enforced source citation for hallucination control.
+Fully on-premise — LangChain + Ollama/DeepSeek, zero external API calls.
 
-** [phishing-detection](https://github.com/jjinyy/phishing-detection)**
-AI proxy that answers unknown calls and detects scams in real time.
-Whisper STT + keyword scoring + GPT response strategy.
-Flask backend · GitHub Actions CI/CD · deployed on Render.
+**[phishing-detection](https://github.com/jjinyy/phishing-detection)**
+Real-time scam-call detection proxy — Whisper STT + keyword scoring + LLM response strategy.
+Flask backend · self-built GitHub Actions CI/CD · deployed on Render, alone.
 
-** [kleague-analytics](https://github.com/jjinyy/kleague-analytics)**
-Pass destination prediction from K League event sequences.
-LSTM vs Transformer comparison. Sequential behavior modeling.
+**[kleague-analytics](https://github.com/jjinyy/kleague-analytics)**
+Pass-destination prediction from K League event sequences. LSTM vs. Transformer comparison.
+Same problem shape as tracing a fault signature through commit history or test-execution logs.
 
 ---
 
 ### Stack
 
-**Analytics / ML**
-`Python` `R` `SQL` `pandas` `scikit-learn` `PyTorch` `TensorFlow`
-`NLP / Embeddings` `Triplet Loss` `LangChain` `RAG` `Ollama` `Streamlit`
+**Analytics / ML** `Python` `SQL` `pandas` `scikit-learn` `PyTorch` `NLP / Embeddings` `Triplet Loss` `Reinforcement Learning` `LangChain` `RAG` `Ollama`
 
-**Systems / Backend**
-`Flask` `Spring` `Vue.js` `Oracle DB`
-`GitHub Actions` `Render` `UiPath RPA`
+**Systems / Backend** `FastAPI` `Flask` `Spring` `Vue.js` `Oracle DB` `Jenkins` `GitHub Actions` `Render`
 
-**ERP / Enterprise**
-`SAP ERP` `SAP Ariba` `SAP SRM` `SAP BW` `SAP SAC`
+**SAP / Enterprise** `SAP ERP` `SAP Ariba` `SAP BW / SAC` `SAP AI Core` `SAP CAP / HANA CDS`
 
