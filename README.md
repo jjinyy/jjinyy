@@ -1,62 +1,112 @@
-## Hi, I'm Jinny
+## Hi, I'm Hyejin (Jinny)
 
-I build applied AI systems that work in real-world environments.
+I'm an AI/software engineer interested in building intelligent systems that work beyond the prototype.
 
-My focus is not just on models, but on how AI integrates into actual business processes —
-from data pipelines and system design to deployment and iteration.
+My work spans **AI agents, LLM systems, retrieval, applied ML, reinforcement learning, and full-stack AI applications** — from experimenting with models and architectures to building APIs, evaluation pipelines, and production integrations.
 
-I often start with messy, ambiguous problems
-and turn them into structured AI solutions that can be reliably used in production.
+I enjoy problems where the right solution isn't obvious at the start: understanding the problem structure, choosing the right technical approach, building the system end-to-end, and testing whether it actually works.
 
-Before building anything, I prioritize understanding how people work —
-because the success of an AI system depends more on adoption than accuracy.
+I've worked across 20+ projects in manufacturing, logistics, pharma, and distribution, and have built AI systems in both client-facing and enterprise environments across Korea, Malaysia, Singapore, Thailand, Brazil, and the US.
 
-I’ve worked across Malaysia, Singapore, Thailand, Brazil, and the US,
-designing systems in environments where data is inconsistent and processes vary widely.
-These experiences shaped how I approach scalable and resilient AI.
-
-Currently focused on behavioral data pipelines,
-LLM/RAG-based systems, and building AI that holds up beyond the prototype stage.
+Currently exploring **AI agents, AI for software engineering, retrieval & evidence-grounded reasoning, evaluation, and reliable AI systems.**
 
 ---
 
-### Projects
+## Selected Projects
 
-**[soybeanoil-predict](https://github.com/jjinyy/soybeanoil-predict)**
-Commodity purchase decision model — RL (DQN) + XGBoost/TFT, reframed as a sequential decision problem, not price forecasting.
-SAP CAP/Node.js service layer (HANA CDS, OData) serving the model through SAP AI Core — training → inference validated end to end.
+### [incident-response-agent](https://github.com/jjinyy/incident-response-agent)
 
-**[material-category-mapping-ai](https://github.com/jjinyy/material-category-mapping-ai)**
-Auto-classification pipeline for 100K+ multilingual material records.
-95%+ accuracy within a standardized category schema.
-Human-in-the-loop design — accuracy compounds as users give feedback.
-Triplet Loss + Hard Negative Mining based training architecture.
+An AI agent that investigates production incidents across a synthetic microservice environment.
 
-**[vendor-deduplication-ai](https://github.com/jjinyy/vendor-deduplication-ai)**
-Dedup pipeline across ~50K global supplier records.
-No universal ID across countries — tax ID used only as a secondary signal.
-3-stage hybrid: Blocking → ANN → embedding similarity scoring.
-~30% duplicate rate found and cleaned.
+Uses native tool calling to inspect **logs, metrics, distributed traces, deployments, configuration changes, dependencies, and runbooks**.
 
-**[procurement-rag-system](https://github.com/jjinyy/procurement-rag-system)**
-Internal compliance/policy Q&A system. Hybrid retrieval + enforced source citation for hallucination control.
-Fully on-premise — LangChain + Ollama/DeepSeek, zero external API calls.
+Built fault-injection scenarios for deployment regressions, dependency failures, bad configurations, connection-pool exhaustion, and traffic spikes — with evidence validation, bounded investigation loops, human approval for high-risk remediation, and stateful recovery verification.
 
-**[phishing-detection](https://github.com/jjinyy/phishing-detection)**
-Real-time scam-call detection proxy — Whisper STT + keyword scoring + LLM response strategy.
-Flask backend · self-built GitHub Actions CI/CD · deployed on Render, alone.
-
-**[kleague-analytics](https://github.com/jjinyy/kleague-analytics)**
-Pass-destination prediction from K League event sequences. LSTM vs. Transformer comparison.
-Same problem shape as tracing a fault signature through commit history or test-execution logs.
+`Python` `FastAPI` `LLM Tool Calling` `Distributed Tracing` `Agent Evaluation`
 
 ---
 
-### Stack
+### [bug-ranker](https://github.com/jjinyy/bug-ranker)
 
-**Analytics / ML** `Python` `SQL` `pandas` `scikit-learn` `PyTorch` `NLP / Embeddings` `Triplet Loss` `Reinforcement Learning` `LangChain` `RAG` `Ollama`
+A research-inspired fault-localization system based on the AutoFL approach.
 
-**Systems / Backend** `FastAPI` `Flask` `Spring` `Vue.js` `Oracle DB` `Jenkins` `GitHub Actions` `Render`
+Given a stack trace, ranks the functions most likely to contain the bug using **AST-level code chunking, hybrid keyword + embedding retrieval, and optional Claude reranking**.
 
-**SAP / Enterprise** `SAP ERP` `SAP Ariba` `SAP BW / SAC` `SAP AI Core` `SAP CAP / HANA CDS`
+Achieved **100% Top-1 / Top-5 retrieval accuracy on a 5-case controlled benchmark**, with automated evaluation through GitHub Actions.
 
+`Python` `AST` `Embeddings` `Hybrid Retrieval` `Claude API` `Evaluation`
+
+---
+
+### [material-category-mapping-ai](https://github.com/jjinyy/material-category-mapping-ai)
+
+A multilingual classification system for **100K+ records**, combining learned embeddings with rule-based logic and human feedback.
+
+Built with **Triplet Loss + Hard Negative Mining** and a human-in-the-loop retraining workflow, achieving **95%+ classification accuracy**.
+
+`PyTorch` `Embeddings` `Triplet Loss` `Hard Negative Mining` `Human-in-the-loop`
+
+---
+
+### [phishing-detection](https://github.com/jjinyy/phishing-detection)
+
+A real-time voice AI system for detecting and responding to suspicious calls.
+
+Whisper handles speech-to-text, a lightweight rule-based layer provides low-latency and explainable risk detection, and GPT is used selectively for language generation.
+
+Built end-to-end from backend and telephony integration to frontend and deployment.
+
+`Whisper` `OpenAI API` `Flask` `Twilio` `React` `GitHub Actions` `Render`
+
+---
+
+### [vendor-deduplication-ai](https://github.com/jjinyy/vendor-deduplication-ai)
+
+A multilingual entity-resolution system for **~50K global records** with inconsistent identifiers and noisy text.
+
+Reduced a naïve **~151M pairwise comparison space to tens of thousands of candidates** through:
+
+**Blocking → ANN Retrieval → Composite Similarity Scoring**
+
+`Python` `ANN` `Embeddings` `Entity Resolution` `Multilingual NLP`
+
+---
+
+### [soybeanoil-predict](https://github.com/jjinyy/soybeanoil-predict)
+
+An ML decision system that treats commodity purchasing as a **sequential decision problem rather than just a forecasting problem**.
+
+Experiments with XGBoost, Temporal Fusion Transformer, and DQN to generate **Buy / Split / Wait** recommendations, exposed through a REST serving layer.
+
+`XGBoost` `TFT` `DQN` `Reinforcement Learning` `Time Series` `REST API`
+
+---
+
+## What I Work With
+
+**AI / ML**  
+`LLM APIs` `Tool Calling` `RAG` `Embeddings` `PyTorch` `scikit-learn` `Reinforcement Learning` `Whisper` `LangChain`
+
+**Backend / Systems**  
+`Python` `FastAPI` `Flask` `Django` `Spring` `REST APIs` `SQL`
+
+**Frontend**  
+`React` `TypeScript` `Vue.js`
+
+**Cloud / Infrastructure**  
+`AWS Lambda` `API Gateway` `S3` `GitHub Actions` `Render`
+
+**Enterprise Systems**  
+`SAP` `Ariba` `BW/SAC` `CAP` `HANA`
+
+---
+
+## What I Care About
+
+I'm interested in the space between **a model that works in a notebook and an AI system that actually works.**
+
+That means thinking about more than model accuracy:
+
+**retrieval · evaluation · latency · grounding · failure modes · human feedback · system integration · deployment**
+
+I like experimenting with new AI techniques, but I'm even more interested in understanding **when they work, when they fail, and how to turn them into reliable systems.**
