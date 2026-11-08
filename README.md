@@ -1,14 +1,18 @@
 ## Hi, I'm Hyejin (Jinny)
 
-I'm an AI/software engineer interested in building intelligent systems that work beyond the prototype.
+**Enterprise Data & AI Architect | Hands-on AI Engineer**
 
-My work spans **AI agents, LLM systems, retrieval, applied ML, reinforcement learning, and full-stack AI applications** — from experimenting with models and architectures to building APIs, evaluation pipelines, and production integrations.
+I design and build data and AI solutions that connect complex enterprise systems with real business needs.
 
-I enjoy problems where the right solution isn't obvious at the start: understanding the problem structure, choosing the right technical approach, building the system end-to-end, and testing whether it actually works.
+Over the past 8 years, I've worked across **enterprise data architecture, applied machine learning, AI systems, and customer-facing technical consulting** — from understanding business requirements and evaluating technical options to building solutions and validating their impact.
 
-I've worked across 20+ projects in manufacturing, logistics, pharma, and distribution, and have built AI systems in both client-facing and enterprise environments across Korea, Malaysia, Singapore, Thailand, Brazil, and the US.
+At **CJ CheilJedang**, I've worked on enterprise data platform modernization, including hands-on validation of **SAP Business Data Cloud–Databricks integration** and Delta Sharing. My work involves evaluating architecture trade-offs across performance, cost, governance, and AI readiness. I've also developed AI solutions for procurement decision support, material classification, entity resolution, RAG, and knowledge graph-based profitability analysis.
 
-Currently exploring **AI agents, AI for software engineering, retrieval & evidence-grounded reasoning, evaluation, and reliable AI systems.**
+Previously at **Hansol PNS**, I worked with clients across manufacturing, logistics, pharmaceuticals, and distribution, collaborating with sales teams on technical PoCs, solution architecture, and end-to-end project delivery.
+
+I enjoy solving problems where the right technical approach isn't obvious at first — understanding the business context, designing practical solutions, building them hands-on, and testing whether they actually work.
+
+Currently exploring **AI agents, retrieval and evidence-grounded reasoning, evaluation, and reliable AI systems**.
 
 ---
 
